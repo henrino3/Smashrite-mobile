@@ -1,0 +1,29 @@
+<ion-view view-title={{title}} style="background:#F2F2F2;">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+      <div>
+        <h2 class="title" style="text-align:center;font-weight:bold;color:#F44336;"> Practice Complete!</h2>
+        <h3 style="text-align:center">You will need a Smashrite Profile to save your progress</h3>
+
+      </div>
+      <div class="list practice-card-top" style="margin-top:10%;margin-bottom:30%">
+          <img class="full-image" src="img/safe.png">
+      </div>
+      <button ng-hide="facebookConnected" sui-sref="app.courses" style="" class="button button-full ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         LATER
+     </button>
+
+     <button ng-hide="facebookConnected" ng-click="fbLogin()" style="" class="button button-full button-positive ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+       SIGN UP WITH Facebook
+    </button>
+
+      <button ng-show="facebookConnected" ui-sref="app.courses" style="" class="button button-full ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         TAKE ANOTHER PRACTICE
+     </button>
+
+     <button ng-show="facebookConnected" ng-click="fbLogin()" style="" class="button button-full button-positive ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+       PROFILE
+    </button>
+
+
+    </ion-content>
+</ion-view>

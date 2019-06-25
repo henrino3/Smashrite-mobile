@@ -1,0 +1,32 @@
+<ion-view view-title='{{currentCourse}}' class="practice">
+    <ion-content ng-class="{expanded:$scope.isExpanded}" style="background:#FD6A5B;">
+      <div class="list practice-card-img" style="margin-top: 10%;">
+          <img class="full-image" src="img/mode3.png" style="width:125px">
+      </div>
+
+
+                  <div class="list card practice-card" style="margin-top: 20%;">
+                    <div class="item item-body">
+                      <h2 ng-show="currentMode == 5" class="text-center" style="left: 0px!important;">Quiz Mode</h2>
+                      <p ng-show="currentMode == 5" class="text-center" style="left: 0px!important;">
+                            There are five questions in this mode. This quiz is not timed. And you see the right answer immediately.<br />Let's get started.
+                      </p>
+                    
+                      <h2 ng-show="currentMode == 50" class="text-center" style="left: 0px!important;">Study Mode</h2>
+                      <p ng-show="currentMode == 50" class="text-center" style="left: 0px!important;">
+                            Hey {{user.name}}! You are in for some serious business. There are fifty questions in this mode. This quiz is not timed. You only see the answers at the end of your study.<br />BRACE UP! <br />Hope you got rid of distractions?
+                      </p>
+                        
+                      <button ng-show="currentMode == 5" ui-sref="app.quiz" style="" class="button button-positive practice-start-btn ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+                         START
+                     </button>
+
+                      <button ng-show="currentMode == 50" ui-sref="app.study" style="" class="button button-positive practice-start-btn ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+                         START
+                     </button>
+                    </div>
+                  </div>
+
+
+    </ion-content>
+</ion-view>

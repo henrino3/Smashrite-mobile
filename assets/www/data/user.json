@@ -1,0 +1,27 @@
+[
+{
+"username": "feoke@gmail.com",
+"password": "102075040433727225",
+"id": "102075040433727225",
+"email": "ifeoke@gmail.com",
+"first_name": "Ifeanyi",
+"last_name": "Oke",
+"name": "Ifeanyi",
+"gender": "male",
+"age_range": {
+	"min": 21
+	},
+"link": "https://www.facebook.com/app_scoped_user_id/10207504043372715/",
+"locale": "en_US",
+"picture": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/p100x100/11659286_10205964942456154_6526851307865664550_n.jpg?oh=eddb2d8d36c15a407408d9c73b148e78&oe=57539850&__gda__=1465527429_9ff426993ad5357849926276169cd74a",
+"timezone": 0,
+"updated_time": "2015-11-29T17:55:32+0000",
+"verified": true,
+"access_token": "jhbjclnx;kscpksllqncdsdncjdscdcdcdd",
+"phone": "08583073232323",
+ "status": "Beginner",
+ "device_details": {},
+ "appData": {}
+
+}
+]

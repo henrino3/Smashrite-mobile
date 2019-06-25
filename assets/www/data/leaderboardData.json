@@ -1,0 +1,52 @@
+[
+  {
+    "Name": "Nathaniel",
+    "Image_url":"Barot_Bellingham",
+    "Points": 80
+  },
+  {
+    "Name": "Deirdre",
+    "Image_url":"Jonathan_Ferrar",
+    "Points": 90
+  },
+  {
+    "Name": "Coby",
+    "Image_url":"Hillary_Goldwynn",   
+    "Points": 81
+  },
+  {
+    "Name": "Ariel",
+    "Image_url":"Hassum_Harrod",    
+    "Points": 15
+  },
+  {
+    "Name": "Walker",
+    "Image_url":"Xhou_Ta",
+    "Points": 54
+  },
+  {
+    "Name": "Bruno",
+    "Image_url":"LaVonne_LaRue",
+    "Points": 47
+  },
+  {
+    "Name": "Olympia",
+    "Image_url":"Riley_Rewington",    
+    "Points": 71
+  },
+  {
+    "Name": "Zane",
+    "Image_url":"Jennifer_Jerome",
+    "Points": 72
+  },
+  {
+    "Name": "Kai",
+    "Image_url":"Constance_Smith",
+    "Points": 45
+  },
+  {
+    "Name": "Jaime",
+    "Image_url":"Riley_Rewington",
+    "Points": 54
+  }
+]

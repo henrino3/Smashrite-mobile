@@ -1,0 +1,52 @@
+﻿<ion-view view-title={{currentCourse}} class="quiz">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="range range-positive">
+              <span id="progress"></span>
+        </div>
+
+      <span style="margin-left:43%">{{currentPage}} of {{totalItems}}</span>
+<<<<<<< HEAD
+=======
+        <p>{{$scope.correctAns}}</p>
+>>>>>>> 849bd3217a56a6bd0ac8026db6e21834e55533bb
+
+
+      <div ng-repeat="question in filteredQuestions">
+        <div class="card question-card">
+          <h2 class="item item-text-wrap text-center" style=" color: #fff;">
+            {{question.question}} <span ng-bind-html="question.Name"></span></h2>
+        </div>
+        <ion-list class="question" ng-repeat="option in question.Options">
+           <ion-checkbox  id="{{option.Id}}" ng-model="option.Selected" ng-change="onSelect(question, option);" >
+           <span ng-bind-html="option.Name"></span>
+           </ion-checkbox>
+        </ion-list>
+            
+
+        <div class="padding">
+        <!-- <button ng-click="goTo(currentPage + 1);ansNotif()" id="ladda-button" class="ladda-button button button-full" data-style="expand-right">
+            <span class="ladda-label">Submit</span>
+            <div class="ladda-progress" style="width: 132px;"></div>
+          </button> 
+-->
+            <button  ng-show="currentPage==totalItems" ui-sref="app.result" class="button button-full button-assertive ink" data-ink-color="#F44336" data-ink-opacity="1" ng-click="onSubmit();">
+              SUBMIT
+            </button>
+
+<<<<<<< HEAD
+
+            <button ng-hide="currentPage==totalItems"  class="button button-full button-assertive ink"  ng-click="goTo(currentPage + 49);" id="notification-trigger" data-ink-color="#F44336" data-ink-opacity="1">
+=======
+            <button ng-hide="currentPage==totalItems"  class="button button-full button-assertive ink"  ng-click="goTo(currentPage + 1);" id="notification-trigger" data-ink-color="#F44336" data-ink-opacity="1">
+>>>>>>> 849bd3217a56a6bd0ac8026db6e21834e55533bb
+              <span class="content">CONTINUE</span>
+              <span class="progress"></span>
+            </button>
+            <button class="button button-full button-assertive ink" ng-click="mode = 'review'">Review</button>
+            <button class="button button-full button-assertive ink" ng-click="onSubmit();">Result</button> 
+
+        </div>
+
+        </div>
+    </ion-content>
+</ion-view>

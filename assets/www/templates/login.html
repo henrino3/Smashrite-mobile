@@ -1,0 +1,36 @@
+        <div class="content back-positive loginPage">
+            <div class="bar bar-header bar-assertive">
+                <div class="buttons buttons-left header-item">
+                    <span class="left-buttons">
+                        <button ng-click="$ionicGoBack($event)" class="button button-icon button-clear ion-chevron-left"></button>
+                    </span>
+                </div>
+
+                <div class="h1 title tile-left light">
+                    Enter Your Details
+                </div>
+            </div>
+              <form ng-submit="login()">
+                <div class="phone-input-div">
+                    <div class="list list-inset">
+                       <label class="item item-input" style="">
+                        <input type="text" placeholder="Name" ng-model='user.name' required>
+                    </label>
+                </div>
+                </div>
+
+                <div class="name-input-div">
+                    <div class="list list-inset">
+                       <label class="item item-input">
+                        <input type="number" placeholder="Phone No" ng-model="user.phone" required ng-minlength="6" ng-maxlength="11">
+                    </label>
+                </div>
+                </div>
+
+
+        <div class="padding">
+            <button type="submit" class="button button-full button-light button-primary ink" data-ink-color="#FD6A5B" data-ink-opacity="1">Login</button>
+        </div>
+
+          </form>
+        </div>

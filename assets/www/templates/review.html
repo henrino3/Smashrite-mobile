@@ -1,0 +1,49 @@
+<ion-view view-title={{title}} style="background:#F2F2F2;">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+
+
+      <div>
+        <h2 class="title" style="top: 10px;text-align:center;font-weight:bold;color:#F44336;"> REVIEW</h2>
+        <h3 style="text-align:center">
+          <i class="icon ion-plus"></i>
+          10 pts </h3>
+
+          <h5 style="text-align:center;color:#FD6A5B">You Got 3 out of 5</h5>
+
+      </div>
+      
+      <div class="list practice-card-top" style="margin-top:15%;margin-bottom:10%">
+         
+              <div ng-show="mode=='result'">
+                    <h2>Quiz Result</h2>
+                    <div ng-repeat="question in questions">
+                        <div class="card question-card">
+                            <h4>{{$index + 1}}. {{question.Name}}</h4>
+                            <div class="row">
+                                <ion-list class="col-md-6" ng-repeat="Option in question.Options | filter: Option.Selected">
+                                    <div>
+                                        <input id="{{Option.Id}}" type="checkbox" disabled="disabled" ng-model="Option.Selected" />
+                                        {{Option.Name}}
+                                    </div>
+                                </ion-list>
+                            </div>
+                            <h4 class="alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">The answer is {{isCorrect(question)}}.</h4>
+                        </div>
+                    </div>
+                </div>
+      </div>
+
+      <div class="button-bar" >
+      <button ui-sref="app.practice" style="" class="button ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         PRACTICE AGAIN
+     </button>
+      <button ui-sref="app.profile" style="" class="button button-assertive ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         PROFILE
+     </button>
+
+   </div>
+
+
+
+    </ion-content>
+</ion-view>

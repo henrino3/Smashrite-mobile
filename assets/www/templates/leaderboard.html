@@ -1,0 +1,13 @@
+<ion-view>
+    <ion-content>
+        <div class="item item-text-wrap text-center">
+            <h1 style="font-size:25px">Leaderboard</h1>
+        </div>
+        <div class="list">
+            <a class="item item-avatar" style="border-bottom: 1px solid #ccc" ng-repeat="item in leaderboardData | orderBy: '-Points'">
+                <img ng-src="images/{{item.Image_url}}_tn.jpg" alt="Photo of {{item.Name}}">
+                <h2>{{item.Name}} <span style="text-align:right">{{item.Points}} points</span></h2>                
+            </a>             
+        </div>
+    </ion-content>
+</ion-view>

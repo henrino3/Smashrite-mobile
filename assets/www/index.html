@@ -1,0 +1,92 @@
+﻿&#xFEFF;<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src *;
+               script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos;
+                           127.0.0.1:*
+                           http://localhost:*
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           ;
+               style-src  &apos;self&apos; &apos;unsafe-inline&apos;
+                           127.0.0.1
+                           http://localhost
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.smashrite.com
+">
+   
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/ion-md-input/css/ion-md-input.min.css" rel="stylesheet">
+    <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/ngprogress/ngProgress.css">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+    <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+    <script src="lib/ion-md-input/js/ion-md-input.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/notification/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="lib/notification/css/notification.css">
+   <link rel="stylesheet" type="text/css" href="lib/ladda/dist/ladda.min.css">
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+    <script src="lib/ngCordova/ng-cordova.min.js"></script>
+<!-- <script src="cordova.js"></script> -->
+    <!-- your app's js -->
+    
+    <script src="js/app.js"></script>
+    <script src="js/openfb.js"></script>
+    <script src="js/ngOpenFB.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/quizCtrl.js"></script>
+    <script src="js/studyCtrl.js"></script>
+    <script src="js/services.js"></script>
+    <script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="lib/ngprogress/ngprogress.min.js"></script>
+    <script src="lib/notification/js/modernizr.custom.js"></script>
+    <script src="lib/notification/js/classie.js"></script>
+    <script src="lib/notification/js/notificationFx.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular/angular-ui-notification.min.js"></script>
+    <script src="lib/angular-base64/angular-base64.min.js"></script>
+    <script src="lib/angular-kinvey/kinvey.min.js"></script>
+    <script src="lib/ngstorage/ngStorage.min.js"></script>
+
+
+</head>
+<body ng-app="smashrite" class="platform-android platform-cordova platform-webview">
+
+
+
+    <ion-nav-view></ion-nav-view>
+
+    <script id="my-modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar>
+          <h1 class="title">My Modal title</h1>
+
+        </ion-header-bar>
+        <ion-content>
+          Hello!
+          <button ng-click="closeModal()" class="button button-full button-positive button-stable ink" data-ink-color="#3498DB" data-ink-opacity="1">
+            CLOSE
+          </button>
+        </ion-content>
+      </ion-modal-view>
+    </script>
+    <script>
+			(function() {
+			})();
+		</script>
+</body>
+</html>

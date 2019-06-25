@@ -1,0 +1,33 @@
+<ion-view view-title="">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+
+        <div id="range" class="range range-positive">
+              <span id="progress"></span>
+        </div>
+
+      <div ng-repeat="question in questions">
+        <div class="card question-card">
+          <div class="item item-text-wrap text-center" style="8">
+            {{question.question}}
+          </div>
+        </div>
+        <ion-list class="question">
+          <ion-radio ng-model="choice" ng-value="'A'">{{question.optionA}}</ion-radio>
+          <ion-radio ng-model="choice" ng-value="'B'">{{question.optionB}}</ion-radio>
+          <ion-radio ng-model="choice" ng-value="'B'">{{question.optionC}}</ion-radio>
+          <ion-radio ng-model="choice" ng-value="'B'">{{question.optionD}}</ion-radio>
+        </ion-list>
+      </div>
+
+
+
+        <div class="padding">
+            <button ui-sref="app.result" class="button button-full button-assertive button-stable ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+              NEXT
+            </button>
+            <button ng-click="openModal()" class="button button-full button-assertive button-stable ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+              OPEN
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,15 @@
+﻿[
+	{ "name": "ACCOUNTING", "type": "UTME", "icon": "A", "color": "#1ABC9C" },
+	{ "name": "BIOLOGY", "type": "UTME", "icon": "B", "color": "#34495E" },
+	{ "name": "CHEMISTRY", "type": "UTME", "icon": "C", "color": "#C0392B" },
+	{ "name": "COMMERCE", "type": "UTME", "icon": "C", "color": "#E67E22" },
+	{ "name": "AGRICULTURE", "type": "UTME", "icon": "A", "color": "#27AE60" },
+	{ "name": "ECONOMICS", "type": "UTME", "icon": "E", "color": "#8E44AD" },
+	{ "name": "ENGLISH LANGUAGE", "type": "UTME", "icon": "E", "color": "#1ABC9C" },
+	{ "name": "GEOGRAPHY", "type": "UTME", "icon": "G", "color": "34495E" },
+	{ "name": "GOVERNMENT", "type": "UTME", "icon": "G", "color": "#C0392B" },
+	{ "name": "LITERATURE IN ENGLISH", "type": "UTME", "icon": "L", "color": "#E67E22" },
+	{ "name": "MATHEMATICS", "type": "UTME", "icon": "M", "color": "#27AE60" },
+	{ "name": "PHYSICS", "type": "UTME", "icon": "P", "color": "#8E44AD" },
+	{ "name": "CHRISTIAN RELIGIOUS STUDIES", "type": "UTME", "icon": "C", "color": "#1ABC9C" }
+]

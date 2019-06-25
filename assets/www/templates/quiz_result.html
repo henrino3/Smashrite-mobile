@@ -1,0 +1,37 @@
+<ion-view view-title={{title}} style="background:#F2F2F2;">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+      <div>
+        <h2 class="title" style="text-align:center;font-weight:bold;color:#F44336;"> Study Complete!</h2>
+        <h3 style="text-align:center">
+          <i class="icon ion-plus"></i>
+          10 pts </h3>
+
+          <h5 style="text-align:center;color:#FD6A5B">You Got 3 out of 5</h5>
+
+      </div>
+      <div class="list practice-card-top" style="margin-top:15%;margin-bottom:20%">
+          <img class="full-image" src="img/stars.png">
+      </div>
+
+      <button ng-click="fbShare()" style="" class="button button-full button-positive ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         SHARE
+     </button>
+      <div class="button-bar" >
+      <button ui-sref="app.review" style="" class="button ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         REVIEW
+     </button>
+      <button ng-show="facebookConnected" ui-sref="app.save" style="" class="button button-assertive ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         CONTINUE
+     </button>
+      <button ng-hide="facebookConnected" ui-sref="app.profile" style="" class="button button-assertive ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         PROFILE
+     </button>
+
+   </div>
+   <button ng-click="share()" style="width: 60%;margin-left: 20%;" class="button button-full button-positive ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+      ANOTHER PRACTICE
+  </button>
+
+
+    </ion-content>
+</ion-view>

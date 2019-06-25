@@ -1,0 +1,20 @@
+<ion-view view-title="Hi {{user.name}}" drag-content="false">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+      <div class="card courses" style="background:url('img/courses-cover.png');height:80px;">
+          <div class="item item-text-wrap text-center">
+               <h1 style="color:#fff;font-size:25px">Choose a practice subject</h1>
+          </div>
+          </div>
+
+        <div class="list animate-fade-slide-in-right" >
+          <div class="item item-divider">
+              <span style="color:#000">UTME</span>
+            </div>
+            <a ng-click="getCourse(course.name, course.code)" class="item item-avatar item-icon-left item-icon-right" style="border-bottom: 1px solid #ccc" ng-repeat="course in courses">
+                <i class="icon course-icon" style="left:8%;color:#fff;background:{{course.color}}">{{course.icon}}</i>
+                <h2 style="margin-top:4px!important">{{course.name}}</h2>
+                <i class="icon ion-chevron-right muted"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

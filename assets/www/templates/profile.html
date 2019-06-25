@@ -1,0 +1,63 @@
+<ion-view view-title="Profile" class="profile">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up"ss>
+            <div class="content">
+                <div class="avatar" style="background-image: url({{user.picture}});"></div>
+                <h3><a class="light">{{user.name}}</a></h3>
+                <h4>{{user.status}}</h4>
+
+            </div>
+        </div>
+
+        <div class="card courses">
+            <div class="list animate-fade-slide-in-right">
+                <a class="item item-icon-right">
+                    <h2>STATISTICS</h2>
+                    <p>{{totalExams}} Practices Taken</p>
+                    <i class="icon ion-help-buoy muted"></i>
+                </a>
+              </div>
+      </div>
+
+       <!--  <div class="card courses">
+            <div class="list animate-fade-slide-in-right">
+                <a class="item item-icon-right">
+                    <h2>COURSES</h2>
+                    <p ng-repeat="course in userCourses">
+                          <span>{{course}}</span>
+                    </p>
+                    <i class="icon ion-document-text muted"></i>
+                </a>
+              </div>
+      </div> -->
+
+     <!--    <div class="card courses">
+            <div class="list animate-fade-slide-in-right">
+                <a class="item item-icon-right">
+                    <h2>LATEST ACHIEVEMENTS</h2>
+                    <p>Da illest illegitimate</p>
+                    <i class="icon ion-briefcase muted"></i>
+                </a>
+              </div>
+      </div>
+      <div class="card courses">
+            <div class="list animate-fade-slide-in-right">
+                <a class="item item-icon-right">
+                    <h2>RANKING</h2>
+                    <p>See how you rank</p>
+                    <i class="icon ion-star muted"></i>
+                </a>
+              </div>
+      </div> -->
+      <button ui-sref="app.courses" style="margin-top:10%" class="button button-full button-light button-assertive ink" data-ink-color="#FD6A5B" data-ink-opacity="1">
+         START PRACTICE
+     </button>
+       <button class="button button-primary button-block " ng-click="checkForUpdates()">
+        Check for updates
+        </button>
+
+       <button class="button button-stable button-block button-pulse" ng-if="hasUpdate" ng-click="doUpdate()">
+        Download update
+        </button>
+    </ion-content>
+</ion-view>

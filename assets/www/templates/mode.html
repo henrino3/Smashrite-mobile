@@ -1,0 +1,21 @@
+<ion-view view-title="Choose a Practice Mode" class="mode">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+
+      <div class="list animate-fade-slide-in-right"  style="margin-top:5%">
+        <a ng-click="getMode(mode.no)" class="item item-thumbnail-left item-icon-right" style="min-height: 100px;" ng-repeat="mode in modes">
+           <img ng-src="{{mode.img}}" style="top: 0px;">
+          <h2>{{mode.name}}</h2>
+          <p>{{mode.no}} Questions</p>
+          <i class="icon ion-chevron-right muted"></i>
+        </a>
+      </div>
+
+
+        <div class="card" style="margin-top:10%">
+          <h3 class="item item-text-wrap text-center" style="">
+            You can always change this daily goal later
+          </h3>
+        </div>
+
+    </ion-content>
+</ion-view>
